@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/homepage.html">About Me</a></li>
+            <li><a href="/contact.html">Photography</a></li>
+            <li><a href="/contact.html">Contact Form</a></li>
+            <li><a href="/experiments.html">Experiments</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Me</h1>
+    <form action="/contact.html">
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label for="title">Title</label><br>
+            <input type="radio" name="title" id="area1">Mr.<br>
+            <input type="radio" name="title" id="area2">Ms.<br>
+            <input type="radio" name="title" id="area3">Mrs.<br>
+            <input type="radio" name="title" id="area4">Lord
+            <br>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name">
+            <br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name">
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Send a message!</legend>
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <br>
+
+            <label for="area">Area of interest:</label><br>
+            <input type="checkbox" name="area" id="area1">Programming<br>
+            <input type="checkbox" name="area" id="area2">Photography<br>
+            <input type="checkbox" name="area" id="area3">Writing<br>
+            <input type="checkbox" name="area" id="area4">Other<br>
+
+            <label for="referral">How did you hear about this site?<br></label>
+            <select name="referral" id="referral">
+                <optgroup label="Person">
+                    <option value="friend">Friend</option>
+                    <option value="family">Family Member</option>
+                    <option value="stranger">Stranger</option>
+                </optgroup>
+                <optgroup label="Place(?)">
+                    <option value="social media">Social Media</option>
+                    <option value="google">Search Results</option>
+                    <option value="dream">In a dream</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="user-location">Where are you located?<br></label>
+            <input list="user-locations" id="user-location" name="user-location">
+            <datalist id="user-locations">
+                <option value="La Jolla"></option>
+                <option value="San Diego"></option>
+                <option value="Oceanside"></option>
+                <option value="Del Mar"></option>
+                <option value="Los Angeles"></option>
+            </datalist>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
