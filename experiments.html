@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiments mwhahahaha</title>
+    <style>
+        canvas {
+            border: 5px solid red;
+        }
+    </style>
 </head>
-<body>
+<header id="top">
     <nav>
         <ul>
-            <li><a href="/homepage.html">About Me</a></li>
+            <li><a href="/index.html">About Me</a></li>
             <li><a href="/contact.html">Photography</a></li>
             <li><a href="/contact.html">Contact Form</a></li>
             <li><a href="/experiments.html">Experiments</a></li>
         </ul>
     </nav>
+</header>
+<body>
     <h1>Experiments</h1>
     <canvas id="testCanvas">
         This is a canvas. If you see this, your browser does not support it.
     </canvas>
+    <br>
     <script>
         let canv = document.getElementById("testCanvas");
         let canvx = canv.getContext("2d");
         canvx.fillStyle = "blue";
-        canvx.fillRect(50, 50, 100, 35);
+        canvx.fillRect(50, 50, 200, 50);
     </script>
     <math>
         <mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mi>2</mi></msup>
     </math>
 </body>
+<footer>
+    <a href="#top">Go to Top</a>
+</footer>
 </html>
