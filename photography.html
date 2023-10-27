@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Olsen Photography</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -11,12 +16,78 @@
         <nav>
             <ul>
                 <li><a href="/index.html">About Me</a></li>
-                <li><a href="/contact.html">Photography</a></li>
+                <li><a href="/photography.html">Photography</a></li>
                 <li><a href="/contact.html">Contact Form</a></li>
                 <li><a href="/experiments.html">Experiments</a></li>
             </ul>
         </nav>
     </header>
-        
+    <section>
+        <h2>Photography Tech Demo</h2>
+        <table>
+            <caption>A quick table about photo compression.</caption>
+            <thead>
+                <tr>
+                    <th colspan="4">Photo Tradeoffs</th>
+                </tr>
+            </thead>
+            <colgroup>
+                <col/>
+                <col/>
+                <col/>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th></th>
+                    <th scope="col">Quality</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Compatibility</th>
+                </tr>
+                <tr>
+                    <th scope="row">JPG</td>
+                    <td>Good</td>
+                    <td>Larger</td>
+                    <td>Most compatiable</td>
+                </tr>
+                <tr>
+                    <th scope="row">PNG</td>
+                    <td>Best</td>
+                    <td>Largest</td>
+                    <td>Slightly less compatiable</td>
+                </tr>
+                <tr>
+                    <th scope="row">WebP</td>
+                    <td>Fair/Good</td>
+                    <td>Smaller</td>
+                    <td>More recent, least compatiable</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><i>Can you tell the difference?</i></p>
+        <figure>
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/GliderFull.jpg">
+                <img src="/images/GliderFull.jpg" alt="A photo of a glider during sunset. The sun is inbetween the two people in the hangar" width="400px">
+            </picture>
+            <figcaption>A full res JPEG photo of a glider.</figcaption>
+        </figure>
+
+        <figure>
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/GliderPNG.png">
+                <img src="/images/GliderPNG.png" alt="A photo of a glider during sunset. The sun is inbetween the two people in the hangar" width="400px">
+            </picture>
+            <figcaption>A compressed PNG photo of a glider.</figcaption>
+        </figure>
+
+        <figure>
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/GliderWebp.webp">
+                <img src="/images/GliderWebp.webp" alt="A photo of a glider during sunset. The sun is inbetween the two people in the hangar" width="400px">
+            </picture>
+            <figcaption>A compressed WebP photo of a glider.</figcaption>
+        </figure>
+    </section>
 </body>
 </html>
