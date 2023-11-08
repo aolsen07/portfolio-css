@@ -5,79 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Olsen Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <header>
     <nav>
         <ul>
-            <li><a href="/index.html">About Me</a></li>
-            <li><a href="/contact.html">Photography</a></li>
-            <li><a href="/contact.html">Contact Form</a></li>
-            <li><a href="/experiments.html">Experiments</a></li>
+            <li class="nav-item"><a href="/index.html">About Me</a></li>
+            <li class="nav-item"><a href="/contact.html">Photography</a></li>
+            <li class="nav-item"><a href="/contact.html">Contact Form</a></li>
+            <li class="nav-item"><a href="/experiments.html">Experiments</a></li>
         </ul>
     </nav>
 </header>
 <body>
-    <h1>I'm Alexander Olsen!</h1>
-    <p><strong>Welcome to my personal portfolio!</strong>Custom made for <em>CSE 134B</em>, using only* HTML!</p>
-    <img src="images/Screenshot 2023-10-26 164124.png" alt="A picture of me working on this website" >
-    <hr>
-    <h2>Work Experience</h2>
-    <template>
-        <h3></h3>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
-    </template>
-    
-    <section>
-        <h3>Integritas Solutions</h3>
-        <p>During the <b>summer of 2022</b>, I had a chance to learn more about being a Database Administrator and getting to know the in's and out's of 
-            SQL and databases as a whole.</p>
-        <ul>
-            <li>Created a migration to remove duplicate entries and reorganize indexes</li>
-            <li>Utilized recursive query logic to dynamically create T-SQL procedures</li>
-            <li>Did not accidentally <code>DROP TABLE USERS;</code></li>
-        </ul>
-    </section>
-    
-    <section>
-        <h3>The UCSD Guardian</h3>
-        <p>For two years, I have been very involved in UCSD's newspaper, working to bring it more into the digital age through social media and technology.<br>
-            I'm very passionate about journalism and photography, which you can see more of <a href="photography.html">here.</a><br>
-        </p>
-        <details>
-            <summary>My Coverage</summary>
-            <h3>Here are some of the articles I've written in chronological order!</h3>
-            <ol>
-                <li><a href="https://ucsdguardian.org/2023/04/02/disreguardian-chancellor-coleslaw-attempted-to-appease-uaw-strike-by-offering-access-to-his-pool-sometimes/">	
-                    DisreGuardian: Chancellor Coleslaw Attempted to Appease UAW Strike By Offering Access to His Pool, Sometimes</a></li>
-                <li><a href="https://ucsdguardian.org/2023/04/22/green-new-deal-at-ucsd-holds-walkout-for-climate-rally-amid-khoslas-new-dream-for-electrification-by-2030/">	
-                    Green New Deal at UCSD Holds Walkout for Climate Rally amid Khosla's New “Dream” for Electrification by 2030</a></li>
-                <li><a href="https://ucsdguardian.org/2023/06/05/grad-workers-still-fighting-for-contracts-six-months-after-strike/">
-                    Grad Workers Still Fighting for Contracts Six Months After Strike</a></li>
-            </ol>
-        </details>
-    </section>
-    
-    <section>
-        <h3>Vamonos Vans</h3>
-        <p>Last summer, I interned for a small van conversion business, focusing a lot on their website redesign as well as helping to produce video content.</p>
-        <ul>
-            <li>Designed a high-fidelity prototype for the company's website redesign using <span>Figma</span></li>
-            <li>Recorded and produced short-form content for <span>Instagram</span> illustrating the company's process.</li>
-            <li>Edited long and short-form video using <span>Adobe Premiere Pro</span></li>
-        </ul>
-        <details>
-            <summary>Work Sample</summary>
-            <video controls width="600px" muted>
-                <source src="images/VanSample.mp4" />
-                <p>Your browser does not support video.</p>
-            </video>
-            <aside>Disclaimer: This is not actually my work, but for the assignment I will pretend it is</aside>
-        </details>
-    </section>
+    <div class="postcard">
 
+        <div class="hello">
+            <h1>I'm Alexander Olsen!</h1>
+            <br>
+            <p>
+                <strong>Welcome to my personal portfolio!</strong><br>
+                Custom made for <em>CSE 134B</em>, using only HTML and CSS!
+            </p>
+        </div>
+        <div id="postcard-frame">
+            <img src="images/Screenshot 2023-10-26 164124.png" alt="A picture of me working on this website" >
+        </div>
+    </div>
+    
+    <div id="work-experience-container">
+        <h2 id="work-experience-header">Work Experience</h2>
+        <template>
+            <h3></h3>
+            <p></p>
+            <ul>
+                <li></li>
+            </ul>
+        </template>
+        
+        <section class="work-experience">
+            <h3>Integritas Solutions</h3>
+            <p>During the <b>summer of 2022</b>, I had a chance to learn more about being a Database Administrator and getting to know the in's and out's of 
+                SQL and databases as a whole.</p>
+            <ul>
+                <li>Created a migration to remove duplicate entries and reorganize indexes</li>
+                <li>Utilized recursive query logic to dynamically create T-SQL procedures</li>
+                <li>Did not accidentally <code>DROP TABLE USERS;</code></li>
+            </ul>
+        </section>
+        
+        <section class="work-experience">
+            <h3>The UCSD Guardian</h3>
+            <p>For two years, I have been very involved in UCSD's newspaper, working to bring it more into the digital age through social media and technology.<br>
+                I'm very passionate about journalism and photography, which you can see more of <a href="photography.html">here.</a><br>
+            </p>
+            <details>
+                <summary>My Coverage</summary>
+                <h3>Here are some of the articles I've written in chronological order!</h3>
+                <ol>
+                    <li><a href="https://ucsdguardian.org/2023/04/02/disreguardian-chancellor-coleslaw-attempted-to-appease-uaw-strike-by-offering-access-to-his-pool-sometimes/">	
+                        DisreGuardian: Chancellor Coleslaw Attempted to Appease UAW Strike By Offering Access to His Pool, Sometimes</a></li>
+                    <li><a href="https://ucsdguardian.org/2023/04/22/green-new-deal-at-ucsd-holds-walkout-for-climate-rally-amid-khoslas-new-dream-for-electrification-by-2030/">	
+                        Green New Deal at UCSD Holds Walkout for Climate Rally amid Khosla's New “Dream” for Electrification by 2030</a></li>
+                    <li><a href="https://ucsdguardian.org/2023/06/05/grad-workers-still-fighting-for-contracts-six-months-after-strike/">
+                        Grad Workers Still Fighting for Contracts Six Months After Strike</a></li>
+                </ol>
+            </details>
+        </section>
+        
+        <section class="work-experience">
+            <h3>Vamonos Vans</h3>
+            <p>Last summer, I interned for a small van conversion business, focusing a lot on their website redesign as well as helping to produce video content.</p>
+            <ul>
+                <li>Designed a high-fidelity prototype for the company's website redesign using <span>Figma</span></li>
+                <li>Recorded and produced short-form content for <span>Instagram</span> illustrating the company's process.</li>
+                <li>Edited long and short-form video using <span>Adobe Premiere Pro</span></li>
+            </ul>
+            <details>
+                <summary>Work Sample</summary>
+                <video controls width="600px" muted>
+                    <source src="images/VanSample.mp4" />
+                    <p>Your browser does not support video.</p>
+                </video>
+                <aside>Disclaimer: This is not actually my work, but for the assignment I will pretend it is</aside>
+            </details>
+        </section>
+    </div>
 </body>
 <footer>
     <div>
@@ -89,7 +102,7 @@
         <p>made with procrastination (and love <svg fill="#000000" width="40px" height="40px" viewBox="0 0 512 512" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">            <g id="jewel_ring-diamond-ring-_valentine-jewellery">
             <path d="M316,192c-21.965,0-42.911,5.946-60,15.44c-16.649-9.276-37.671-15.44-60-15.44c-68.48,0-124,55.52-124,124   s55.52,124,124,124c21.975,0,42.917-5.95,60-15.44c16.657,9.279,37.671,15.44,60,15.44c68.48,0,124-55.52,124-124   S384.48,192,316,192z M296,389.28c28.501-38.677,31.743-90.417,9.12-132.24c-18.491,3.696-32.585,14.654-40,27.2   C288.168,334.948,251.073,392,196,392c-41.92,0-76-34.08-76-76c0-49.56,47.118-86.548,96-73.28   c-28.591,38.804-31.672,90.544-9.12,132.24c18.568-3.717,32.55-14.584,40-27.2c-4.4-9.68-6.88-20.48-6.88-31.76   c0-40.986,33.214-76,76-76c41.92,0,76,34.08,76,76C392,362.896,347.643,403.297,296,389.28z M165.934,116   c2.211-3.828,7.098-5.148,10.93-2.93l20.781,12c3.828,2.211,5.137,7.102,2.93,10.93c-1.484,2.57-4.172,4-6.938,4   c-1.355,0-2.734-0.344-3.992-1.07l-20.781-12C165.035,124.719,163.727,119.828,165.934,116z M311.426,136   c-2.207-3.828-0.898-8.719,2.93-10.93l20.781-12c3.82-2.219,8.711-0.898,10.93,2.93c2.207,3.828,0.898,8.719-2.93,10.93l-20.781,12   c-1.258,0.727-2.637,1.07-3.992,1.07C315.598,140,312.91,138.57,311.426,136z M209.07,102.719c-2.207-3.828-0.895-8.719,2.93-10.93   c3.836-2.219,8.719-0.891,10.93,2.93l4,6.93c2.207,3.828,0.895,8.719-2.93,10.93c-1.262,0.727-2.637,1.07-3.992,1.07   c-2.766,0-5.453-1.438-6.938-4L209.07,102.719z M184,160c4.418,0,8,3.578,8,8s-3.582,8-8,8h-8c-4.418,0-8-3.578-8-8s3.582-8,8-8   H184z M285.07,101.648l4-6.93c2.207-3.82,7.086-5.148,10.93-2.93c3.824,2.211,5.137,7.102,2.93,10.93l-4,6.93   c-1.484,2.563-4.172,4-6.938,4c-1.355,0-2.73-0.344-3.992-1.07C284.176,110.367,282.863,105.477,285.07,101.648z M344,168   c0,4.422-3.582,8-8,8h-8c-4.418,0-8-3.578-8-8s3.582-8,8-8h8C340.418,160,344,163.578,344,168z M248,96V72c0-4.422,3.582-8,8-8   s8,3.578,8,8v24c0,4.422-3.582,8-8,8S248,100.422,248,96z M228.216,143.072c7.145-8.922,20.021-9.402,27.784-1.442   c7.763-7.96,20.64-7.479,27.784,1.442c6.283,7.845,4.913,19.398-2.104,26.594l-19.953,20.46c-3.14,3.22-8.315,3.22-11.455,0   l-19.952-20.46C223.303,162.47,221.933,150.917,228.216,143.072z"/>
             </g><g id="Layer_1"/></svg>)</p>
-        <pre>
+        <pre id="ascii-art">
 ⣐⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣶⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⣿⣅⡠⠃⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
