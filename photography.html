@@ -16,15 +16,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/index.html">About Me</a></li>
-                <li><a href="/photography.html">Photography</a></li>
-                <li><a href="/contact.html">Contact Form</a></li>
-                <li><a href="/experiments.html">Experiments</a></li>
+                <li class="nav-item"><a href="/index.html">About Me</a></li>
+                <li class="nav-item"><a href="/photography.html">Photography</a></li>
+                <li class="nav-item"><a href="/contact.html">Contact Form</a></li>
+                <li class="nav-item"><a href="/experiments.html">Experiments</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Photography Tech Demo</h2>
+    <h2>Photography Tech Demo</h2>
+    <aside>
         <table>
             <caption>A quick table about photo compression.</caption>
             <thead>
@@ -64,8 +64,8 @@
                 </tr>
             </tbody>
         </table>
-
-        <p><i>Can you tell the difference?</i></p>
+    </aside>
+    <div id="photo-gallery">
         <figure>
             <picture>
                 <source media="(max-width: 800px)" srcset="images/GliderFull.jpg">
@@ -76,10 +76,25 @@
 
         <figure>
             <picture>
+                <source media="(min-width: 800px)" srcset="images/Julien-Baker-Large.jpg">
+                <img src="images/Julien-Baker.jpg" alt="Julien Baker at the hollywood bowl" width="800px">
+            </picture>
+            <figcaption>Julien Baker performing at the Hollywood Bowl on Halloween</figcaption>
+        </figure>
+
+        <figure>
+            <picture>
                 <source media="(max-width: 800px)" srcset="images/GliderPNG.png">
                 <img src="/images/GliderPNG.png" alt="A photo of a glider during sunset. The sun is inbetween the two people in the hangar" width="400px">
             </picture>
             <figcaption>A compressed PNG photo of a glider.</figcaption>
+        </figure>
+        <figure>
+            <picture>
+                <source media="(max-width: 800px)" srcset="images/_DSC3963.webp">
+                <img src="/images/_DSC3963.jpg" alt="Sunset obscured by the clouds" width="1000px">
+            </picture>
+            <figcaption>Sunset obscured by the clouds</figcaption>
         </figure>
 
         <figure>
@@ -89,6 +104,8 @@
             </picture>
             <figcaption>A compressed WebP photo of a glider.</figcaption>
         </figure>
-    </section>
+
+       
+    </div>
 </body>
 </html>
