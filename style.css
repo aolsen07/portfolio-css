@@ -21,10 +21,73 @@ a {
     text-decoration: underline;
 }
 
+/* smol */
 @media screen and (max-width: 459px) {
+    .hello > h1 {
+        font-size: 2.2rem;
+    }
     
     nav {
-        background: color(srgb-linear 0 1 0);
+        background: color-mix(
+            in hsl longer hue,
+            hsl(10 100% 50%),
+            hsl(60 100% 50%)
+          );
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        font-size: 1.2rem;
+        top: 0;
+    }
+    
+    nav > ul {
+        border: red 1px solid;
+        justify-content: space-evenly;
+        height: auto;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 50px;
+        list-style: none;
+        color: white;
+    }
+    
+    .nav-item {
+        height: auto;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 125px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    pre {
+        display: none;
+    }
+
+    .postcard {
+        height: 80%;
+        background-color: #488286;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        padding: 5%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+}
+
+/* wide */
+@media screen and (min-width: 460px) {
+    
+    nav {
+        background: color(srgb-linear .67 .3 .2);
         height: 80px;
         display: flex;
         justify-content: center;
@@ -36,54 +99,7 @@ a {
     
     nav > ul {
         display: flex;
-        border: red 1px solid;
-        justify-content: space-between;
-        height: 80px;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0 50px;
-        list-style: none;
-        color: white;
-    }
-    
-    .nav-item {
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 125px;
-        text-decoration: none;
-        height: 100%;
-        transition: all 0.3s ease;
-    }
-
-    pre {
-        display: none;
-    }
-    
-}
-
-
-@media screen and (min-width: 460px) {
-    nav {
-        background: color-mix(
-            in hsl longer hue,
-            hsl(10 100% 50%),
-            hsl(60 100% 50%)
-          );
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        top: 0;
-    }
-    
-    nav > ul {
-        display: flex;
-        border: red 1px solid;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 80px;
         width: 100%;
         max-width: 1000px;
@@ -108,19 +124,21 @@ a {
         transition: all 0.3s ease;
         color: white;
     }
+
+    .postcard {
+        height: 40%;
+        background-color: #488286;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        justify-content: space-evenly;
+        padding: 5%;
+        margin: 0 auto;
+        align-items: center;
+    }
 }
 
-.postcard {
-    height: 40%;
-    background-color: #488286;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    justify-content: space-evenly;
-    padding: 5%;
-    margin: 0 auto;
-    align-items: center;
-}
+
 
 #postcard-frame {
     display: flexbox;
@@ -268,4 +286,15 @@ video {
     padding: 20px;
     background-color: grey;
     border-radius: 20px;
+}
+
+/* points! see About me > Work Experience vs. Header of Photo page */
+h2:has(+ section) {
+    text-decoration: underline;
+}
+
+code {
+    background-color: color(srgb 20 20 20);
+    color: blue;
+    font-family: 'Courier New', Courier, monospace
 }
