@@ -33,7 +33,7 @@
         <output for="email" id="email-info"></output>
         <br>
         <label for="message">Leave a comment: <span class="req-star">*</span></label>
-        <textarea name="message" id="message" minlength="25" required></input>
+        <textarea name="message" id="message-box" minlength="25" maxlength="250" cols="40" rows="10" oninput="updateCharCount()"></textarea>
         <output for="message" id="message-errs"></output>
         <output for="message" id="message-info">250</output>
         <input type="checkbox" name="possible_bot" id="possible_bot" hidden checked min="25" max="250"></textarea>
