@@ -6,7 +6,6 @@
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="form-check.js"></script>
 </head>
 <header>
     <nav>
@@ -24,19 +23,20 @@
             
         <label for="name">Name: <span class="req-star">*</span></label>
         <input type="text" name="name" id="name" required>
-        <output for="name" id="name-error"></output>
-        <output for="name" id="name-info"></output>
+        <output for="name"></output>
+        <output for="name"></output>
         <br>
         <label for="email">Email Address: <span class="req-star">*</span></label>
         <input type="email" name="email" id="email" required>
-        <output for="email" id="email-error"></output>
-        <output for="email" id="email-info"></output>
+        <output for="email"></output>
+        <output for="email"></output>
         <br>
         <label for="message">Leave a comment: <span class="req-star">*</span></label>
-        <textarea name="message" id="message" minlength="25" required></input>
-        <output for="message" id="message-errs"></output>
-        <output for="message" id="message-info">250</output>
-        <input type="checkbox" name="possible_bot" id="possible_bot" hidden checked min="25" max="250"></textarea>
+        <input name="message" id="message" minlength="25" required></input>
+        <output for="message"></output>
+        <output for="message"></output>
+        <!-- only allow ascii characters -->
+        <input type="checkbox" name="possible_bot" id="possible_bot" hidden checked pattern="[\x00-\x7F]+">
         <br>
         <button type="submit">Submit</button>
     </form>
