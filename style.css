@@ -21,6 +21,13 @@ a {
     text-decoration: underline;
 }
 
+#sun-moon {
+    position: absolute;
+    left: 95vw;
+    margin: none;
+    padding: none;
+}
+
 /* smol */
 @media screen and (max-width: 459px) {
     .hello > h1 {
@@ -36,7 +43,7 @@ a {
         height: 100px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
         flex-wrap: nowrap;
         font-size: 1.2rem;
         top: 0;
@@ -92,7 +99,7 @@ a {
         height: 80px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         font-size: 1.2rem;
         top: 0;
@@ -308,4 +315,8 @@ form {
 }
 .req-star {
     color: red;
+}
+
+input:invalid {
+    border: 2px rgba(192, 26, 26, 0.733) solid;
 }
